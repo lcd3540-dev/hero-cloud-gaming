@@ -1,0 +1,103 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HERO CLOUD GAMING</title>
+<style>
+body {
+  margin:0;
+  background:#090d1c;
+  color:white;
+  font-family:Arial,sans-serif;
+}
+header {
+  background:#171f39;
+  padding:22px;
+  text-align:center;
+  font-size:27px;
+  font-weight:bold;
+  color:#00e5ae;
+}
+.container {
+  max-width:850px;
+  margin:35px auto;
+  padding:20px;
+}
+.game {
+  background:#171f39;
+  padding:25px;
+  border-radius:18px;
+  text-align:center;
+}
+.logo {
+  font-size:75px;
+  margin:15px;
+}
+h1 {color:#00e5ae;}
+button {
+  background:#00c896;
+  color:#061b18;
+  border:0;
+  border-radius:12px;
+  padding:17px 45px;
+  font-size:21px;
+  font-weight:bold;
+  cursor:pointer;
+}
+button:hover {background:#00edb0;}
+#screen {
+  display:none;
+  margin-top:25px;
+  background:#050914;
+  border:2px solid #00c896;
+  border-radius:15px;
+  padding:35px 10px;
+}
+#status {color:#00e5ae;}
+small {color:#aab5d1;}
+</style>
+</head>
+<body>
+
+<header>☁ HERO CLOUD GAMING</header>
+
+<div class="container">
+<div class="game">
+
+<div class="logo">🎮</div>
+<h1>ROBLOX CLOUD</h1>
+<p>Welcome to your cloud gaming platform!</p>
+
+<p>Platform: Browser Gaming</p>
+<p>Device: Any PC</p>
+<p>Mode: Cloud Gaming</p>
+
+<button onclick="startGame()">▶ PLAY NOW</button>
+
+<div id="screen">
+<h2>HERO CLOUD SCREEN</h2>
+<p id="status">Connecting...</p>
+<p>Cloud streaming server required.</p>
+<button onclick="openRoblox()">OPEN ROBLOX</button>
+</div>
+
+<br><br>
+<small>HERO CLOUD GAMING V2</small>
+
+</div>
+</div>
+
+<script>
+function startGame() {
+ document.getElementById("screen").style.display="block";
+ document.getElementById("status").innerHTML =
+ "Cloud server not connected yet.";
+}
+function openRoblox() {
+ window.open("https://www.roblox.com/", "_blank");
+}
+</script>
+
+</body>
+</html>
